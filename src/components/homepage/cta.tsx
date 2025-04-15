@@ -2,7 +2,10 @@ import UnderlineLink from '@/components/links/UnderlineLink';
 
 const CTA = () => {
   return (
-    <section className='h-screen container mx-auto relative grid grid-rows-6'>
+    <section
+      className='h-screen container mx-auto relative grid grid-rows-6'
+      id='contact'
+    >
       <div className='row-start-4'>
         <h1 className='font-light text-4xl'>
           Ready to bring your next idea to life?

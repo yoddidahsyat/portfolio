@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Summary = () => {
   return (
-    <section className='h-screen'>
+    <section className='h-screen scroll-smooth' id='about'>
       <div className='container h-full mx-auto py-16 grid grid-cols-3'>
         <div className='grid grid-rows-6'>
           <div />

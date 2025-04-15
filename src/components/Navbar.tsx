@@ -6,8 +6,9 @@ const Navbar = () => {
       <div className='flex gap-10'>
         <Link href='/'>yoddidahsyat</Link>
         &mdash;
-        <Link href='/about'>about me</Link>
-        <Link href='/projects'>my projects</Link>
+        <Link href='#about'>about</Link>
+        <Link href='#projects'>projects</Link>
+        <Link href='#contact'>contact</Link>
       </div>
       <div className='flex gap-10'>
         <Link href='https://github.com/yoddidahsyat' target='_blank'>
