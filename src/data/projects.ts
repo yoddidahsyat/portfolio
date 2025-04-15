@@ -17,7 +17,7 @@ export const projects: TProject[] = [
     description: 'Seamless Villa Booking Experience',
     content:
       'A modern web app for discovering and booking villas across the UAE.',
-    stacks: ['NextJs', 'Typescript', 'MaterialUI'],
+    stacks: ['Next.js', 'Typescript', 'MaterialUI'],
     images: {
       laptop: '/images/projects/everywhere-laptop.png',
       mobile: '/images/projects/everywhere-mobile.png',
@@ -40,8 +40,8 @@ export const projects: TProject[] = [
     title: 'Image-Text Scanner',
     description: 'Client-Side Text Recognition Tool',
     content:
-      'A lightweight OCR application utilizing Tesseract.js to extract text from images directly in the browser. Supports multiple languages and ensures user privacy by performing all processing on the client side without server interaction.',
-    stacks: ['NextJs', 'Typescript', 'Tesseract.js'],
+      'A lightweight OCR (Optical Character Recognition) application utilizing Tesseract.js to extract text from images directly in the browser. Supports multiple languages and ensures user privacy by performing all processing on the client side without server interaction.',
+    stacks: ['Next.js', 'Typescript', 'Tesseract.js'],
     images: {
       laptop: '/images/projects/ocr-laptop.png',
       mobile: '/images/projects/ocr-mobile.png',

@@ -11,7 +11,7 @@ const Summary = () => {
           </h2>
           <p>
             I am a Full-Stack Developer based in Indonesia. My main stacks are
-            NextJs for the frontend and NodeJs for the backend. I am also
+            Next.js for the frontend and Node.js for the backend. I am also
             confident with Typescript and PHP.
           </p>
           <p>
