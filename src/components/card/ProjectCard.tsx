@@ -1,0 +1,77 @@
+import { ArrowUpRightFromSquare } from 'lucide-react';
+import Image from 'next/image';
+import { AndroidMockup, AndroidTabMockup } from 'react-device-mockup';
+
+import { TProject } from '@/data/projects';
+
+import ButtonLink from '@/components/links/ButtonLink';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/Card';
+
+const ProjectCard = ({ project }: { project: TProject }) => {
+  return (
+    <Card className='h-5/6 relative bg-primary-50'>
+      <CardHeader>
+        <CardTitle>{project.title}</CardTitle>
+        <CardDescription>{project.description}</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p>{project.content}</p>
+        <p>Stack: {project.stacks.join(', ')}</p>
+        <div className='mt-12 flex gap-8 max-h-10'>
+          <AndroidTabMockup
+            screenWidth={450}
+            hideNavBar
+            hideStatusBar
+            isLandscape
+          >
+            <Image
+              src={project.images.laptop}
+              alt={project.title}
+              width={450}
+              height={600}
+              className='object-cover'
+            />
+          </AndroidTabMockup>
+          <AndroidMockup screenWidth={145}>
+            <Image
+              src={project.images.mobile}
+              alt={project.title}
+              width={145}
+              height={600}
+              className='object-cover'
+            />
+          </AndroidMockup>
+        </div>
+      </CardContent>
+      <CardFooter className='absolute bottom-0 flex gap-4 justify-end w-full'>
+        {project.repo && (
+          <ButtonLink
+            href={project.repo}
+            target='_blank'
+            rightIcon={ArrowUpRightFromSquare}
+          >
+            View repository
+          </ButtonLink>
+        )}
+        {project.link && (
+          <ButtonLink
+            href={project.link}
+            target='_blank'
+            rightIcon={ArrowUpRightFromSquare}
+          >
+            View site
+          </ButtonLink>
+        )}
+      </CardFooter>
+    </Card>
+  );
+};
+
+export default ProjectCard;

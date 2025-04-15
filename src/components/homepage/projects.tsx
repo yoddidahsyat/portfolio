@@ -1,3 +1,7 @@
+import { projects } from '@/data/projects';
+
+import ProjectCard from '@/components/card/ProjectCard';
+
 const Projects = () => {
   return (
     <section className='min-h-screen'>
@@ -6,21 +10,11 @@ const Projects = () => {
           <h1 className='font-light sticky top-1/2 text-4xl'>My Projects</h1>
         </div>
         <div className='col-span-2'>
-          <div className='h-screen'>
-            <div className='p-4 rounded-xl h-5/6 bg-primary-700'>
-              <h1 className='font-medium'>Project A</h1>
+          {projects.map((project) => (
+            <div className='h-screen' key={project.title}>
+              <ProjectCard project={project} />
             </div>
-          </div>
-          <div className='h-screen'>
-            <div className='p-4 rounded-xl h-5/6 bg-primary-700'>
-              <h1 className='font-medium'>Project B</h1>
-            </div>
-          </div>
-          <div className='h-screen'>
-            <div className='p-4 rounded-xl h-5/6 bg-primary-700'>
-              <h1 className='font-medium'>Project C</h1>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
