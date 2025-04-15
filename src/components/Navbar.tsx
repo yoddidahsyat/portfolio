@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div className='container fixed left-1/2 -translate-x-1/2 py-10 flex justify-between w-full text-lg'>
+    <div className='container fixed left-1/2 -translate-x-1/2 py-10 flex justify-between w-full text-lg z-50'>
       <div className='flex gap-10'>
         <Link href='/'>yoddidahsyat</Link>
         &mdash;
