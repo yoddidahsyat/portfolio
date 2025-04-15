@@ -25,7 +25,7 @@ import Navbar from '@/components/Navbar';
 
 export default function HomePage() {
   return (
-    <main className='bg-primary-50'>
+    <main>
       <Navbar />
       <Hero />
       <Summary />
