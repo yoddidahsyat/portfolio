@@ -10,9 +10,9 @@ const Summary = () => {
             learn, code, and bring impact to the world.
           </h2>
           <p>
-            I am a Full-Stack Developer based in Indonesia. My main stacks are
-            Next.js for the frontend and Node.js for the backend. I am also
-            confident with Typescript and PHP.
+            My name is Mohammad Yoddi Dahsyat, a Full-Stack Developer based in
+            Indonesia. My main stacks are Next.js and Node.js, but I also have
+            experience in PHP and Laravel.
           </p>
           <p>
             Currently working at{' '}
