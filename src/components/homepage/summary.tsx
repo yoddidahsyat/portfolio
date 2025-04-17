@@ -4,9 +4,8 @@ const Summary = () => {
   return (
     <section className='h-screen scroll-smooth' id='about'>
       <div className='container h-full mx-auto py-16 grid grid-cols-3'>
-        <div className='grid grid-rows-6'>
-          <div />
-          <h2 className='row-span-2 text-4xl font-light leading-normal'>
+        <div className='grid grid-rows-6 sm:col-span-1 col-span-2'>
+          <h2 className='sm:row-span-3 row-span-2 text-2xl sm:text-4xl font-light leading-normal'>
             learn, code, and bring impact to the world.
           </h2>
           <p>

@@ -22,7 +22,7 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <main>
+    <main className='px-2 sm:px-0'>
       <Navbar />
       <Hero />
       <Summary />

@@ -16,7 +16,7 @@ import {
 
 const ProjectCard = ({ project }: { project: TProject }) => {
   return (
-    <Card className='h-5/6 relative bg-primary-50'>
+    <Card className='sm:h-5/6 h-full relative bg-primary-50'>
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
@@ -24,9 +24,9 @@ const ProjectCard = ({ project }: { project: TProject }) => {
       <CardContent>
         <p>{project.content}</p>
         <p>Stack: {project.stacks.join(', ')}</p>
-        <div className='mt-12 flex gap-8 max-h-10'>
+        <div className='mt-12 flex sm:flex-row flex-col gap-8 max-h-10'>
           <AndroidTabMockup
-            screenWidth={450}
+            screenWidth={370}
             hideNavBar
             hideStatusBar
             isLandscape
