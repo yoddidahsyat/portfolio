@@ -5,7 +5,8 @@ import CTA from '@/components/homepage/cta';
 import Hero from '@/components/homepage/hero';
 import Projects from '@/components/homepage/projects';
 import Summary from '@/components/homepage/summary';
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/navbar/Navbar';
+import NavbarMobile from '@/components/navbar/NavbarMobile';
 
 export const metadata = {
   title: 'Portfolio of Yoddi Dahsyat',
@@ -22,12 +23,15 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <main className='px-2 sm:px-0'>
+    <>
       <Navbar />
-      <Hero />
-      <Summary />
-      <Projects />
-      <CTA />
-    </main>
+      <NavbarMobile />
+      <main className='px-2 sm:px-0'>
+        <Hero />
+        <Summary />
+        <Projects />
+        <CTA />
+      </main>
+    </>
   );
 }
