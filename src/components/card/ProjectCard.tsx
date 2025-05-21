@@ -16,7 +16,7 @@ import {
 
 const ProjectCard = ({ project }: { project: TProject }) => {
   return (
-    <Card className='sm:h-5/6 h-full relative bg-primary-50'>
+    <Card className='sm:h-5/6 h-full relative bg-primary-100'>
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
@@ -53,6 +53,7 @@ const ProjectCard = ({ project }: { project: TProject }) => {
       <CardFooter className='absolute bottom-0 flex gap-4 justify-end w-full'>
         {project.repo && (
           <ButtonLink
+            variant='light'
             href={project.repo}
             target='_blank'
             rightIcon={ArrowUpRightFromSquare}
@@ -62,6 +63,7 @@ const ProjectCard = ({ project }: { project: TProject }) => {
         )}
         {project.link && (
           <ButtonLink
+            variant='dark'
             href={project.link}
             target='_blank'
             rightIcon={ArrowUpRightFromSquare}

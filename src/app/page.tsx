@@ -26,7 +26,7 @@ export default function HomePage() {
     <>
       <Navbar />
       <NavbarMobile />
-      <main className='px-2 sm:px-0'>
+      <main className='px-2 sm:px-0 bg-primary-50'>
         <Hero />
         <Summary />
         <Projects />
