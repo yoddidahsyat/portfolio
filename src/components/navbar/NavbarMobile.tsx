@@ -28,7 +28,7 @@ const NavbarMobile = () => {
         <DrawerTrigger>
           <Menu />
         </DrawerTrigger>
-        <DrawerContent className='h-3/4'>
+        <DrawerContent className='h-3/4 bg-white'>
           <DrawerHeader>
             <DrawerClose className='absolute right-4 top-4'>
               <IconButton variant='ghost' className='text-dark' icon={X} />

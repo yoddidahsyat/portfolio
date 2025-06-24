@@ -16,7 +16,7 @@ import {
 
 const ProjectCard = ({ project }: { project: TProject }) => {
   return (
-    <Card className='sm:h-fit h-full relative bg-primary-100'>
+    <Card className='relative bg-primary-100'>
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
