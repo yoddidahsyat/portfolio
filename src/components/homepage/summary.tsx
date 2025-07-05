@@ -1,6 +1,26 @@
-import Link from 'next/link';
+import UnderlineLink from '@/components/links/UnderlineLink';
+import { Badge } from '@/components/ui/badge';
 
 const Summary = () => {
+  const stacks = [
+    'Next.js',
+    'Node.js',
+    'Typescript',
+    'Javascript',
+    'PHP',
+    'Laravel',
+    'CodeIgniter',
+    'Tailwind CSS',
+    'Bootstrap',
+    'HTML',
+    'CSS',
+    'MySQL',
+    'PostgreSQL',
+    'MongoDB',
+    'Git',
+    'GitHub',
+    'GitLab',
+  ];
   return (
     <section className='h-screen scroll-smooth' id='about'>
       <div className='container h-full mx-auto py-16 grid grid-cols-3'>
@@ -15,18 +35,39 @@ const Summary = () => {
           </p>
           <p>
             Currently working at{' '}
-            <Link
+            <UnderlineLink
               href='https://vaforeveryone.com.au'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-primary-600 hover:underline'
+              className='text-primary-500 text-base border-none font-normal'
+              openNewTab
             >
               VA For Everyone
-            </Link>
+            </UnderlineLink>
             , a Virtual Assistant agency based in Australia. I usually handle
             both frontend and backend of client's web application, with various
             stacks and architecture.
           </p>
+          <p>
+            Feel free to contact me on{' '}
+            <UnderlineLink
+              href='mailto:yoddidahsyat@gmail.com'
+              className='text-primary-500 text-base border-none font-normal'
+              openNewTab
+            >
+              yoddi.dahsyat@gmail.com
+            </UnderlineLink>
+          </p>
+        </div>
+        <div className='sm:col-start-3 flex items-center'>
+          <div className='flex flex-wrap space-y-4 space-x-2 justify-center'>
+            {stacks.map((stack) => (
+              <Badge
+                key={stack}
+                className='hover:bg-primary-100 cursor-default bg-zinc-100'
+              >
+                {stack}
+              </Badge>
+            ))}
+          </div>
         </div>
       </div>
     </section>

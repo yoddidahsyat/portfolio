@@ -7,9 +7,7 @@ const CTA = () => {
       id='contact'
     >
       <div className='row-start-5'>
-        <h1 className='font-light sm:text-4xl'>
-          Ready to bring your next idea to life?
-        </h1>
+        <h1 className='font-light sm:text-4xl'>Let's collaborate!</h1>
       </div>
       <div className='row-start-6 grid grid-cols-2'>
         <div>
