@@ -5,7 +5,9 @@ const Hero = () => {
         <div>
           <h1 className='text-3xl sm:text-5xl font-light'>
             Hi, I'm Yoddi &mdash; a{' '}
-            <span className='font-semibold'>Full Stack Developer</span>
+            <span className='font-semibold text-primary-500'>
+              Full Stack Developer
+            </span>
           </h1>
         </div>
       </div>

@@ -26,7 +26,8 @@ const Summary = () => {
       <div className='container h-full mx-auto py-16 grid grid-cols-3'>
         <div className='grid grid-rows-6 sm:col-span-1 col-span-2'>
           <h2 className='sm:row-span-3 row-span-2 text-2xl sm:text-4xl font-light leading-normal'>
-            learn, code, and bring impact to the world.
+            learn, code, and bring{' '}
+            <span className='text-primary-500'>impact</span> to the world.
           </h2>
           <p>
             My name is Mohammad Yoddi Dahsyat, a Full-Stack Developer based in
@@ -62,7 +63,9 @@ const Summary = () => {
             {stacks.map((stack) => (
               <Badge
                 key={stack}
-                className='hover:bg-primary-100 cursor-default bg-zinc-100'
+                className={`hover:bg-primary-100 cursor-default text-zinc-800 ${
+                  stack === 'Next.js' ? 'bg-primary-200' : 'bg-zinc-100 '
+                }`}
               >
                 {stack}
               </Badge>
