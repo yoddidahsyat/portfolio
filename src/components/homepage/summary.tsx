@@ -57,7 +57,7 @@ const Summary = () => {
             </UnderlineLink>
           </p>
         </div>
-        <div className='sm:col-start-3 flex items-center'>
+        <div className='sm:col-start-3 flex items-end'>
           <div className='flex flex-wrap space-y-4 space-x-2 justify-center'>
             {stacks.map((stack) => (
               <Badge
