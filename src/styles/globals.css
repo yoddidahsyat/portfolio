@@ -2,34 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* #region  /**=========== Primary Color =========== */
-  /* !STARTERCONF Customize these variable, copy and paste from /styles/colors.css for list of colors */
-  --tw-color-primary-50: 247 254 231;
-  --tw-color-primary-100: 236 252 203;
-  --tw-color-primary-200: 217 249 157;
-  --tw-color-primary-300: 190 242 100;
-  --tw-color-primary-400: 163 230 53;
-  --tw-color-primary-500: 132 204 22;
-  --tw-color-primary-600: 101 163 13;
-  --tw-color-primary-700: 77 124 15;
-  --tw-color-primary-800: 63 98 18;
-  --tw-color-primary-900: 54 83 20;
-  --tw-color-primary-950: 26 46 5;
-  --color-primary-50: rgb(var(--tw-color-primary-50)); /* #f7fee7 */
-  --color-primary-100: rgb(var(--tw-color-primary-100)); /* #ecfccb */
-  --color-primary-200: rgb(var(--tw-color-primary-200)); /* #d9f99d */
-  --color-primary-300: rgb(var(--tw-color-primary-300)); /* #bef264 */
-  --color-primary-400: rgb(var(--tw-color-primary-400)); /* #a3e635 */
-  --color-primary-500: rgb(var(--tw-color-primary-500)); /* #84cc16 */
-  --color-primary-600: rgb(var(--tw-color-primary-600)); /* #65a30d */
-  --color-primary-700: rgb(var(--tw-color-primary-700)); /* #4d7c0f */
-  --color-primary-800: rgb(var(--tw-color-primary-800)); /* #3f6212 */
-  --color-primary-900: rgb(var(--tw-color-primary-900)); /* #365314 */
-  --color-primary-950: rgb(var(--tw-color-primary-950)); /* #1a2e05 */
-  /* #endregion  /**======== Primary Color =========== */
-}
-
 @layer base {
   /* inter var - latin */
   @font-face {
