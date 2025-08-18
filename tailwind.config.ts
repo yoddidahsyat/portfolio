@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Inter', ...defaultTheme.fontFamily.sans],
+        primary: ['Montserrat', 'Inter', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: colors.cyan,
