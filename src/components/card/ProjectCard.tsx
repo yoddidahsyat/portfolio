@@ -68,7 +68,7 @@ const ProjectCard = ({ project }: { project: TProject }) => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.05 }}
-              className='flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6'
+              className='flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6 z-[101]'
               onClick={() => setIsExpanded(false)}
             >
               <CloseIcon />
@@ -86,8 +86,8 @@ const ProjectCard = ({ project }: { project: TProject }) => {
                 <Image
                   src={project.images.laptop}
                   alt={project.title}
-                  width={800}
-                  height={400}
+                  width={640}
+                  height={320}
                   className='w-full h-80 object-cover object-top'
                 />
               </motion.div>
@@ -200,8 +200,8 @@ const ProjectCard = ({ project }: { project: TProject }) => {
             <Image
               src={project.images.laptop}
               alt={project.title}
-              width={600}
-              height={400}
+              width={640}
+              height={320}
               className='w-full h-80 rounded-xl object-cover object-top shadow-lg'
             />
           </motion.div>
