@@ -6,7 +6,7 @@ import UnstyledLink, {
   UnstyledLinkProps,
 } from '@/components/links/UnstyledLink';
 
-const UnderlineLink = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
+const ColoredLink = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
   ({ children, className, ...rest }, ref) => {
     return (
       <UnstyledLink
@@ -15,7 +15,7 @@ const UnderlineLink = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
         className={cn(
           'animated-underline custom-link inline-flex items-center font-medium',
           'focus-visible:ring-primary-500 focus:outline-none focus-visible:rounded focus-visible:ring focus-visible:ring-offset-2',
-          'border-dark border-b border-dotted hover:border-black/0',
+          'text-primary-500 hover:text-black active:text-primary-700',
           className
         )}
       >
@@ -25,4 +25,4 @@ const UnderlineLink = React.forwardRef<HTMLAnchorElement, UnstyledLinkProps>(
   }
 );
 
-export default UnderlineLink;
+export default ColoredLink;

@@ -11,14 +11,20 @@ const Navbar = () => {
     <NavigationMenu className='container fixed py-10 text-lg z-50 lg:flex justify-between max-w-none sm:px-4 px-2 hidden'>
       <NavigationMenuList className='flex gap-10'>
         <NavigationMenuItem>
-          <UnstyledLink className='hover:text-primary-500' href='#home'>
+          <UnstyledLink
+            className='hover:text-primary-500 transition-colors'
+            href='#home'
+          >
             yoddidahsyat
           </UnstyledLink>
         </NavigationMenuItem>
         <NavigationMenuItem> &mdash; </NavigationMenuItem>
         {leftMenu.map((menu) => (
           <NavigationMenuItem key={menu.link}>
-            <UnstyledLink className='hover:text-primary-500' href={menu.link}>
+            <UnstyledLink
+              className='hover:text-primary-500 transition-colors'
+              href={menu.link}
+            >
               {menu.label}
             </UnstyledLink>
           </NavigationMenuItem>
@@ -28,7 +34,7 @@ const Navbar = () => {
         {rightMenu.map((menu) => (
           <NavigationMenuItem key={menu.link}>
             <UnstyledLink
-              className='hover:text-primary-500'
+              className='hover:text-primary-500 transition-colors'
               href={menu.link}
               openNewTab
             >

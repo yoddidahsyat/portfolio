@@ -1,4 +1,4 @@
-import UnderlineLink from '@/components/links/UnderlineLink';
+import ColoredLlink from '@/components/links/ColoredLink';
 import { Badge } from '@/components/ui/badge';
 
 const Summary = () => {
@@ -25,7 +25,8 @@ const Summary = () => {
     <section className='h-screen scroll-smooth' id='about'>
       <div className='container h-full mx-auto py-16 grid grid-cols-3'>
         <div className='lg:col-span-1 col-span-3 flex justify-between flex-col'>
-          <h2 className='text-2xl sm:text-4xl font-light leading-normal'>
+          <div className='space-y-4' />
+          <h2 className=' text-2xl sm:text-4xl font-light leading-normal'>
             learn, code, and bring{' '}
             <span className='text-primary-500'>impact</span> to the world.
           </h2>
@@ -37,26 +38,26 @@ const Summary = () => {
             </p>
             <p>
               Currently working at{' '}
-              <UnderlineLink
+              <ColoredLlink
                 href='https://vaforeveryone.com.au'
-                className='text-primary-500 text-base border-none font-normal'
+                className='text-primary-500 text-base font-normal'
                 openNewTab
               >
                 VA For Everyone
-              </UnderlineLink>
+              </ColoredLlink>
               , a Virtual Assistant agency based in Australia. I usually handle
               both frontend and backend of client's web application, with
               various stacks and architecture.
             </p>
             <p>
               Feel free to contact me on{' '}
-              <UnderlineLink
+              <ColoredLlink
                 href='mailto:yoddidahsyat@gmail.com'
-                className='text-primary-500 text-base border-none font-normal'
+                className='text-primary-500 text-base font-normal'
                 openNewTab
               >
                 yoddi.dahsyat@gmail.com
-              </UnderlineLink>
+              </ColoredLlink>
             </p>
           </div>
         </div>

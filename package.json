@@ -24,6 +24,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.438.0",
+    "motion": "^12.23.12",
     "next": "^14.2.21",
     "react": "^18.2.0",
     "react-device-mockup": "^1.0.0",

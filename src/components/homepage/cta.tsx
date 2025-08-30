@@ -1,4 +1,4 @@
-import UnderlineLink from '@/components/links/UnderlineLink';
+import ColoredLink from '@/components/links/ColoredLink';
 
 const CTA = () => {
   return (
@@ -7,38 +7,38 @@ const CTA = () => {
       id='contact'
     >
       <div className='row-start-5'>
-        <h1 className='font-light sm:text-4xl'>
-          Let's <span className='text-primary-500'>collaborate</span>!
+        <h1 className='font-light sm:text-8xl'>
+          Let's <span className=''>collaborate</span>!
         </h1>
       </div>
       <div className='row-start-6 grid grid-cols-2'>
         <div>
           <p className='font-light sm:text-2xl'>
             Say hello at{' '}
-            <UnderlineLink
+            <ColoredLink
               href='mailto:yoddi.dahsyat@gmail.com'
               className='font-light'
             >
               yoddi.dahsyat@gmail.com
-            </UnderlineLink>
+            </ColoredLink>
           </p>
         </div>
         <div className='flex sm:flex-row flex-col gap-12 sm:text-2xl ml-auto'>
           <div>
-            <UnderlineLink
+            <ColoredLink
               href='https://github.com/yoddidahsyat'
-              className='font-light'
+              className='font-light text-black hover:text-primary-500'
             >
               github
-            </UnderlineLink>
+            </ColoredLink>
           </div>
           <div>
-            <UnderlineLink
+            <ColoredLink
               href='https://www.linkedin.com/in/yoddidahsyat'
-              className='font-light'
+              className='font-light text-black hover:text-primary-500'
             >
               linkedin
-            </UnderlineLink>
+            </ColoredLink>
           </div>
         </div>
       </div>
