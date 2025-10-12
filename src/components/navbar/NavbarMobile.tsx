@@ -25,26 +25,37 @@ const NavbarMobile = () => {
         </NavigationMenuItem>
       </NavigationMenuList>
       <Drawer>
-        <DrawerTrigger>
-          <Menu />
+        <DrawerTrigger asChild>
+          <button className='p-2'>
+            <Menu />
+          </button>
         </DrawerTrigger>
         <DrawerContent className='h-3/4 bg-white'>
-          <DrawerHeader>
+          <DrawerHeader className='relative'>
             <DrawerClose className='absolute right-4 top-4'>
               <IconButton variant='ghost' className='text-dark' icon={X} />
             </DrawerClose>
           </DrawerHeader>
-          <NavigationMenuList className='flex flex-col gap-10'>
-            {mobileMenu.map((menu) => (
-              <DrawerClose key={menu.link}>
-                <NavigationMenuItem>
-                  <NavigationMenuLink href={menu.link}>
-                    {menu.label}
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              </DrawerClose>
-            ))}
-          </NavigationMenuList>
+          <div className='px-6 py-8'>
+            <NavigationMenuList className='flex flex-col gap-6'>
+              {mobileMenu.map((menu) => (
+                <DrawerClose key={menu.link}>
+                  <NavigationMenuItem>
+                    <NavigationMenuLink
+                      href={menu.link}
+                      className={
+                        menu.isButton
+                          ? 'bg-primary-500 text-white px-6 py-3 rounded-full hover:bg-primary-600 transition-colors inline-block text-center w-full'
+                          : 'text-lg hover:text-primary-500 transition-colors'
+                      }
+                    >
+                      {menu.label}
+                    </NavigationMenuLink>
+                  </NavigationMenuItem>
+                </DrawerClose>
+              ))}
+            </NavigationMenuList>
+          </div>
         </DrawerContent>
       </Drawer>
     </NavigationMenu>

@@ -1,4 +1,10 @@
-export const leftMenu = [
+export interface MenuItem {
+  link: string;
+  label: string;
+  isButton?: boolean;
+}
+
+export const leftMenu: MenuItem[] = [
   {
     link: '#about',
     label: 'about',
@@ -7,21 +13,18 @@ export const leftMenu = [
     link: '#projects',
     label: 'projects',
   },
-  {
-    link: '#contact',
-    label: 'contact',
-  },
 ];
 
-export const rightMenu = [
+export const rightMenu: MenuItem[] = [
   {
-    link: '/docs/Mohammad Yoddi Dahsyat - Full-Stack Developer - Resume.pdf',
+    link: '/docs/Mohammad Yoddi Dahsyat - Fullstack Developer - Resume.pdf',
     label: 'resume',
   },
   {
-    link: 'mailto:yoddi.dahsyat@gmail.com',
-    label: 'yoddi.dahsyat@gmail.com',
+    link: '#contact',
+    label: 'contact me',
+    isButton: true,
   },
 ];
 
-export const mobileMenu = leftMenu.concat(rightMenu);
+export const mobileMenu: MenuItem[] = leftMenu.concat(rightMenu);

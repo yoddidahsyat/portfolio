@@ -32,25 +32,28 @@ const Summary = () => {
           </h2>
           <div className='space-y-4'>
             <p>
-              My name is Mohammad Yoddi Dahsyat, a Full-Stack Developer based in
-              Indonesia. My main stacks are Next.js and Node.js, but I also have
-              experience in PHP and Laravel.
-            </p>
-            <p>
-              Currently working at{' '}
+              Based in Indonesia, I specialize in building and optimizing web
+              applications primarily with Next.js and Node.js. My current
+              experience at{' '}
               <ColoredLlink
                 href='https://vaforeveryone.com.au'
                 className='text-primary-500 text-base font-normal'
                 openNewTab
               >
                 VA For Everyone
-              </ColoredLlink>
-              , a Virtual Assistant agency based in Australia. I usually handle
-              both frontend and backend of client's web application, with
-              various stacks and architecture.
+              </ColoredLlink>{' '}
+              involves seamlessly handling both the frontend and backend of
+              various client projects, utilizing everything from modern Next.js
+              to legacy PHP/Laravel systems.
             </p>
             <p>
-              Feel free to contact me on{' '}
+              I can quickly assess any project, regardless of its tech stack,
+              and deliver elegant, efficient solutions. If you need a developer
+              who can handle a complex integration or deliver a reliable
+              application from concept to deployment, let's connect.
+            </p>
+            <p>
+              Feel free to contact me at{' '}
               <ColoredLlink
                 href='mailto:yoddidahsyat@gmail.com'
                 className='text-primary-500 text-base font-normal'

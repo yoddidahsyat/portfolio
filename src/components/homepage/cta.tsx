@@ -1,6 +1,23 @@
+'use client';
+
+import { Check, Copy } from 'lucide-react';
+import { useState } from 'react';
+
 import ColoredLink from '@/components/links/ColoredLink';
 
 const CTA = () => {
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText('yoddi.dahsyat@gmail.com');
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      // Silently fail - clipboard API not supported
+    }
+  };
+
   return (
     <section
       className='h-screen container mx-auto relative grid grid-rows-6'
@@ -13,7 +30,7 @@ const CTA = () => {
       </div>
       <div className='row-start-6 grid grid-cols-2'>
         <div>
-          <p className='font-light sm:text-2xl'>
+          <p className='font-light sm:text-2xl flex items-center gap-2'>
             Say hello at{' '}
             <ColoredLink
               href='mailto:yoddi.dahsyat@gmail.com'
@@ -21,6 +38,22 @@ const CTA = () => {
             >
               yoddi.dahsyat@gmail.com
             </ColoredLink>
+            <button
+              onClick={copyToClipboard}
+              className='p-1 hover:bg-gray-100 rounded transition-colors duration-200'
+              title={copied ? 'Copied!' : 'Copy email'}
+            >
+              {copied ? (
+                <div className='flex items-center gap-2'>
+                  <Check className='w-4 h-4 text-primary-700' />
+                  <span className='text-sm text-primary-700'>
+                    Email Copied!
+                  </span>
+                </div>
+              ) : (
+                <Copy className='w-4 h-4 text-gray-600 hover:text-gray-800' />
+              )}
+            </button>
           </p>
         </div>
         <div className='flex sm:flex-row flex-col gap-12 sm:text-2xl ml-auto'>

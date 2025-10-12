@@ -34,9 +34,13 @@ const Navbar = () => {
         {rightMenu.map((menu) => (
           <NavigationMenuItem key={menu.link}>
             <UnstyledLink
-              className='hover:text-primary-500 transition-colors'
+              className={
+                menu.isButton
+                  ? 'bg-primary-500 text-white hover:text-primary-500 px-4 py-2 hover:bg-transparent border border-primary-500  rounded-full transition-colors'
+                  : 'hover:text-primary-500 transition-colors'
+              }
               href={menu.link}
-              openNewTab
+              openNewTab={!menu.isButton}
             >
               {menu.label}
             </UnstyledLink>
