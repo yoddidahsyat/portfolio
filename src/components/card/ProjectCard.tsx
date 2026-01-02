@@ -77,7 +77,7 @@ const ProjectCard = ({ project }: { project: TProject }) => {
             <motion.div
               layoutId={`card-${project.title}-${id}`}
               ref={ref}
-              className='w-full max-w-[800px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white sm:rounded-3xl overflow-hidden'
+              className='w-full max-w-[800px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white sm:rounded-3xl overflow-y-auto'
             >
               <motion.div
                 layoutId={`image-${project.title}-${id}`}
