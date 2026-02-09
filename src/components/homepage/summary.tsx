@@ -1,8 +1,9 @@
-import ColoredLlink from '@/components/links/ColoredLink';
 import { Badge } from '@/components/ui/badge';
 
 const Summary = () => {
   const stacks = [
+    'Wordpress',
+    'React.js',
     'Next.js',
     'Node.js',
     'Typescript',
@@ -14,9 +15,9 @@ const Summary = () => {
     'Bootstrap',
     'HTML',
     'CSS',
-    'MySQL',
-    'PostgreSQL',
     'MongoDB',
+    'PostgreSQL',
+    'MySQL',
     'Git',
     'GitHub',
     'GitLab',
@@ -27,40 +28,19 @@ const Summary = () => {
         <div className='lg:col-span-1 col-span-3 flex justify-between flex-col'>
           <div className='space-y-4' />
           <h2 className=' text-2xl sm:text-4xl font-light leading-normal'>
-            learn, code, and bring{' '}
-            <span className='text-primary-500'>impact</span> to the world.
+            I build websites that help businesses{' '}
+            <span className='text-primary-500'>launch faster</span> and{' '}
+            <span className='text-primary-500'>work smarter</span>.
           </h2>
           <div className='space-y-4'>
             <p>
-              Based in Indonesia, I specialize in building and optimizing web
-              applications primarily with Next.js and Node.js. My current
-              experience at{' '}
-              <ColoredLlink
-                href='https://vaforeveryone.com.au'
-                className='text-primary-500 text-base font-normal'
-                openNewTab
-              >
-                VA For Everyone
-              </ColoredLlink>{' '}
-              involves seamlessly handling both the frontend and backend of
-              various client projects, utilizing everything from modern Next.js
-              to legacy PHP/Laravel systems.
+              I'm Yoddi, a web developer with experience building websites and
+              web applications for brands, startups, and internal teams.
             </p>
             <p>
-              I can quickly assess any project, regardless of its tech stack,
-              and deliver elegant, efficient solutions. If you need a developer
-              who can handle a complex integration or deliver a reliable
-              application from concept to deployment, let's connect.
-            </p>
-            <p>
-              Feel free to contact me at{' '}
-              <ColoredLlink
-                href='mailto:yoddidahsyat@gmail.com'
-                className='text-primary-500 text-base font-normal'
-                openNewTab
-              >
-                yoddi.dahsyat@gmail.com
-              </ColoredLlink>
+              I focus on creating clean, functional, and scalable solutions —
+              from landing pages to full web apps — with an emphasis on
+              usability and real business needs.
             </p>
           </div>
         </div>
@@ -70,7 +50,7 @@ const Summary = () => {
               <Badge
                 key={stack}
                 className={`hover:bg-primary-100 cursor-default text-zinc-800 ${
-                  stack === 'Next.js' ? 'bg-primary-200' : 'bg-zinc-100 '
+                  stack === 'Wordpress' ? 'bg-primary-200' : 'bg-zinc-100 '
                 }`}
               >
                 {stack}

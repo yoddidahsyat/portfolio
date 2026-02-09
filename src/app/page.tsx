@@ -1,10 +1,11 @@
 import * as React from 'react';
 import '@/lib/env';
 
-import CTA from '@/components/homepage/cta';
+import CTA from '@/components/homepage/footer';
 import Hero from '@/components/homepage/hero';
 import Projects from '@/components/homepage/projects';
 import Summary from '@/components/homepage/summary';
+import UpperCta from '@/components/homepage/upperCta';
 import Navbar from '@/components/navbar/Navbar';
 import NavbarMobile from '@/components/navbar/NavbarMobile';
 
@@ -29,6 +30,7 @@ export default function HomePage() {
       <main className='px-2 sm:px-0 bg-zinc-50'>
         <Hero />
         <Summary />
+        <UpperCta />
         <Projects />
         <CTA />
       </main>

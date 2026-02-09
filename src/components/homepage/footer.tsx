@@ -1,22 +1,13 @@
 'use client';
 
 import { Check, Copy } from 'lucide-react';
-import { useState } from 'react';
+
+import useCopy from '@/hooks/useCopy';
 
 import ColoredLink from '@/components/links/ColoredLink';
 
 const CTA = () => {
-  const [copied, setCopied] = useState(false);
-
-  const copyToClipboard = async () => {
-    try {
-      await navigator.clipboard.writeText('yoddi.dahsyat@gmail.com');
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      // Silently fail - clipboard API not supported
-    }
-  };
+  const { copied, copy } = useCopy();
 
   return (
     <section
@@ -39,7 +30,7 @@ const CTA = () => {
               yoddi.dahsyat@gmail.com
             </ColoredLink>
             <button
-              onClick={copyToClipboard}
+              onClick={() => copy('yoddi.dahsyat@gmail.com')}
               className='p-1 hover:bg-gray-100 rounded transition-colors duration-200'
               title={copied ? 'Copied!' : 'Copy email'}
             >
