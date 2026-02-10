@@ -11,10 +11,7 @@ import IconLink from '@/components/links/IconLink';
 const UpperCta = () => {
   const { copied, copy } = useCopy();
   return (
-    <section
-      className='my-40 container mx-auto relative flex flex-col justify-center gap-6'
-      id='contact'
-    >
+    <section className='my-40 container mx-auto relative flex flex-col justify-center gap-6'>
       <div>
         <h2 className='font-light sm:text-6xl'>Have a project in mind?</h2>
       </div>
