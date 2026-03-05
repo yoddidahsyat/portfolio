@@ -26,9 +26,9 @@ export const projects: TProject[] = [
   // },
   {
     title: 'Yamiyo Project',
-    description: 'Founder & Product Builder - Anime-Inspired Brand Platform',
+    description: 'Founder & Product Builder - Streetwear Brand Platform',
     content:
-      'Yamiyo Project is an anime-inspired digital brand that I conceptualized and built from the ground up. The website serves as the foundation for future limited product drops and brand storytelling. As the founder and developer, I handled product direction, website architecture, visual implementation, and performance optimization using WordPress. The focus was on building a scalable platform with strong visual identity, responsive design, and a structure ready for future e-commerce expansion.',
+      'Yamiyo Project is a streetwear digital brand that I conceptualized and built from the ground up. The website serves as the foundation for future limited product drops and brand storytelling. As the founder and developer, I handled product direction, website architecture, visual implementation, and performance optimization using WordPress. The focus was on building a scalable platform with strong visual identity, responsive design, and a structure ready for future e-commerce expansion.',
     stacks: ['WordPress'],
     images: {
       laptop: '/images/projects/yamiyo-laptop.png',
