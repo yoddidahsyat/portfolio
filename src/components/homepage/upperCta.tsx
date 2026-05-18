@@ -1,6 +1,7 @@
 'use client';
 
 import { Check, Copy } from 'lucide-react';
+import { motion } from 'motion/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import useCopy from '@/hooks/useCopy';
@@ -12,10 +13,21 @@ const UpperCta = () => {
   const { copied, copy } = useCopy();
   return (
     <section className='my-40 container mx-auto relative flex flex-col justify-center gap-6'>
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.6 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+      >
         <h2 className='font-light sm:text-6xl'>Have a project in mind?</h2>
-      </div>
-      <div className='row-start-4 flex items-center gap-4'>
+      </motion.div>
+      <motion.div
+        className='row-start-4 flex items-center gap-4'
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.15 }}
+      >
         <p>
           Feel free to contact me at{' '}
           <ColoredLink
@@ -52,7 +64,7 @@ const UpperCta = () => {
           className='text-black hover:text-primary-500 border-none'
           aria-label='LinkedIn'
         />
-      </div>
+      </motion.div>
     </section>
   );
 };
