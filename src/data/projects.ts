@@ -26,7 +26,8 @@ export const projects: TProject[] = [
   // },
   {
     title: 'Yamiyo Project',
-    description: 'Founder & Product Builder - Streetwear Brand Platform',
+    description:
+      'Powering a streetwear digital brand with visual storytelling and modern performance',
     content:
       'Yamiyo Project is a streetwear digital brand that I conceptualized and built from the ground up. The website serves as the foundation for future limited product drops and brand storytelling. As the founder and developer, I handled product direction, website architecture, visual implementation, and performance optimization using WordPress. The focus was on building a scalable platform with strong visual identity, responsive design, and a structure ready for future e-commerce expansion.',
     stacks: ['WordPress'],
@@ -38,7 +39,8 @@ export const projects: TProject[] = [
   },
   {
     title: 'Responsible Investment Association Australasia (RIAA)',
-    description: 'Fullstack Developer - Admin System & Public Platform',
+    description:
+      'Connecting responsible investors across Australasia with custom administration tools',
     content:
       'RIAA is a non-profit organization providing education and resources for responsible investors across Australasia. I worked as a fullstack developer contributing to both frontend and backend development. My responsibilities included building and maintaining the public website, developing an internal admin panel, and implementing a custom form builder system. I worked with AngularJS for frontend development, Laravel for backend logic and APIs, and Craft CMS for content management. This role required adapting quickly to new technologies while delivering stable, production-ready features.',
     stacks: ['Laravel', 'AngularJS', 'Craft CMS'],
@@ -49,16 +51,17 @@ export const projects: TProject[] = [
     link: 'https://www.responsiblereturns.com.au/',
   },
   {
-    title: 'Coto Makassar Nusantara 88 Mori',
-    description: 'Freelance Web Developer - Company Profile Website',
+    title: 'Carpentry Australia',
+    description:
+      "Connecting licensed carpenters and homeowners on Australia's most trusted trade network",
     content:
-      'A company profile website developed for a local culinary business to strengthen their digital presence and showcase their menu and brand identity. I handled the project independently, from planning and layout structure to development and deployment using WordPress. The main goal was fast turnaround, strong visual presentation, mobile responsiveness, and easy content management for the client.',
-    stacks: ['WordPress'],
+      'Carpentry Australia is a massive portal for Australian carpenters to showcase their profiles and projects. Built with WordPress and Laravel, it connects licensed, reviewed carpenters across Australia with homeowners and builders, serving as Australia’s most trusted carpentry network.',
+    stacks: ['WordPress', 'Laravel'],
     images: {
-      laptop: '/images/projects/coto-makassar-laptop.png',
-      mobile: '/images/projects/coto-makassar-mobile.png',
+      laptop: '/images/projects/carpentry-australia.png',
+      mobile: '/images/projects/carpentry-australia.png',
     },
-    link: 'https://cotomakassarnusantara.com/',
+    link: 'https://carpentryaustralia.com.au/',
   },
 ];
 
