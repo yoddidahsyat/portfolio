@@ -28,7 +28,7 @@ const Summary = () => {
   ];
   return (
     <section className='h-screen scroll-smooth' id='about'>
-      <div className='container h-full mx-auto py-16 grid grid-cols-3'>
+      <div className='container h-full mx-auto px-2 py-16 grid grid-cols-3 sm:px-0 md:px-6'>
         <div className='lg:col-span-1 col-span-3 flex justify-between flex-col'>
           <div className='space-y-4' />
           <motion.h2
@@ -38,9 +38,9 @@ const Summary = () => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
           >
-            I build websites that help businesses{' '}
-            <span className='text-primary-500'>launch faster</span> and{' '}
-            <span className='text-primary-500'>work smarter</span>.
+            I build and maintain{' '}
+            <span className='text-primary-500'>scalable systems</span> for
+            businesses.
           </motion.h2>
           <motion.div
             className='space-y-4'
@@ -50,8 +50,10 @@ const Summary = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.15 }}
           >
             <p>
-              I'm Yoddi, a web developer with experience building websites and
-              web applications for brands, startups, and internal teams.
+              I'm a{' '}
+              <span className='text-primary-500'>fullstack developer</span> with
+              experiences building websites and web applications for companies,
+              startups, and internal teams.
             </p>
             <p>
               I focus on creating clean, functional, and scalable solutions —

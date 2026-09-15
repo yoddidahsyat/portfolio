@@ -183,7 +183,7 @@ const ProjectCard = ({ project }: { project: TProject }) => {
       {/* WHEN NOT EXPANDED (the card) */}
       <motion.div
         layoutId={`card-${project.title}-${id}`}
-        className='w-full max-w-2xl mx-auto p-8'
+        className='w-full max-w-2xl mx-auto px-2 py-4 sm:p-8'
         whileHover={{
           scale: 1.02,
           transition: { duration: 0.2 },
@@ -191,7 +191,7 @@ const ProjectCard = ({ project }: { project: TProject }) => {
       >
         <div
           onClick={() => setIsExpanded(true)}
-          className='flex gap-6 hover:bg-primary-50 flex-col w-full p-6 rounded-2xl cursor-pointer transition-all duration-300 border border-transparent hover:border-primary-200'
+          className='flex gap-6 hover:bg-primary-50 flex-col w-full p-4 rounded-2xl cursor-pointer transition-all duration-300 border border-transparent hover:border-primary-200 sm:p-6'
         >
           <motion.div
             layoutId={`image-${project.title}-${id}`}

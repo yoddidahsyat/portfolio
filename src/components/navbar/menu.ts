@@ -4,7 +4,9 @@ export interface MenuItem {
   isButton?: boolean;
 }
 
-export const leftMenu: MenuItem[] = [
+export const leftMenu: MenuItem[] = [];
+
+export const rightMenu: MenuItem[] = [
   {
     link: '#about',
     label: 'about',
@@ -13,9 +15,6 @@ export const leftMenu: MenuItem[] = [
     link: '#projects',
     label: 'projects',
   },
-];
-
-export const rightMenu: MenuItem[] = [
   {
     link: '/docs/Mohammad Yoddi Dahsyat - Fullstack Developer - Resume.pdf',
     label: 'resume',

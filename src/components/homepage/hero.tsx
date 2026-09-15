@@ -5,13 +5,26 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <section className='h-screen' id='home'>
-      <div className='container mx-auto flex h-full items-end pb-16'>
-        <div className='flex flex-col gap-6'>
+      <div className='container mx-auto flex h-full items-end px-2 pb-16 sm:px-0 md:px-6'>
+        <div className='flex w-full flex-col items-start gap-8 lg:flex-row lg:items-end lg:justify-between'>
+          <motion.h1
+            className='break-words font-light text-3xl leading-tight'
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
+          >
+            <div className='lg:text-9xl text-7xl pb-4'>
+              Hi,
+              <br /> I'm Yoddi
+            </div>
+            a <span className='text-primary-500'>fullstack developer</span>.
+          </motion.h1>
+
           <motion.div
-            className='relative h-40 w-40 overflow-hidden rounded-full shadow-xl sm:h-44 sm:w-44'
+            className='relative h-40 w-40 flex-shrink-0 overflow-hidden rounded-full shadow-xl sm:h-44 sm:w-44'
             initial={{ opacity: 0, y: 24, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.65, ease: 'easeOut' }}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
           >
             <Image
               src='/images/profile.jpeg'
@@ -22,18 +35,6 @@ const Hero = () => {
               priority
             />
           </motion.div>
-
-          <motion.h1
-            className='text-3xl sm:text-6xl font-light'
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-          >
-            Hi, I'm Yoddi &mdash; a{' '}
-            <span className='font-semibold text-primary-500'>
-              Full Stack Developer
-            </span>
-          </motion.h1>
         </div>
       </div>
     </section>

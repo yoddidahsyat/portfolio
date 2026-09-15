@@ -4,6 +4,8 @@ import * as React from 'react';
 
 import '@/styles/globals.css';
 
+import ScrollbarWidthVar from '@/components/ScrollbarWidthVar';
+
 import { siteConfig } from '@/constant/config';
 
 export const metadata: Metadata = {
@@ -54,6 +56,7 @@ export default function RootLayout({
   return (
     <html className='scroll-smooth'>
       <body>
+        <ScrollbarWidthVar />
         {children}
         <Analytics />
       </body>
